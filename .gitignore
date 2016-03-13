@@ -17,6 +17,9 @@ results
 node_modules
 npm-debug.log
 default.json
+s3.json
+azure.json
+google.json
 test-content
 
 *.swp
