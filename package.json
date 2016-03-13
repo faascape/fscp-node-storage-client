@@ -1,7 +1,7 @@
 {
   "name": "fscp-node-storage-client",
-  "version": "0.0.1",
-  "description": "API for faascape storage api",
+  "version": "0.0.2",
+  "description": "Library for faascape storage api",
   "main": "lib/storage.js",
   "directories": {
     "test": "tests"
