@@ -13,7 +13,7 @@
   "author": "",
   "license": "BSD",
    "devDependencies": {
-       "fscp-http-client":"0.2.2",
+       "fscp-http-client":"0.2.4",
        "bluebird":"3.3.4"
    }
 }
