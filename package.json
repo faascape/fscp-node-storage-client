@@ -1,0 +1,19 @@
+{
+  "name": "fscp-node-storage-client",
+  "version": "0.0.1",
+  "description": "API for faascape storage api",
+  "main": "storage.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests/tests.js",
+    "dbg-test":"mocha --debug-brk tests/tests.js"
+  },    
+  "author": "",
+  "license": "ISC",
+   "devDependencies": {
+       "fscp-http-client":"0.2.2",
+       "bluebird":"3.3.4"
+   }
+}
