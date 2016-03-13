@@ -1,7 +1,7 @@
 var assert = require('assert');
 var fs = require('fs');
 
-var Client = require('../storage.js').StorageClient;
+var Client = require('../lib/storage.js').StorageClient;
 
 var TEST_CONTENT = "test content";
 
