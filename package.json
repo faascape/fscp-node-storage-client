@@ -1,19 +1,32 @@
 {
-  "name": "fscp-node-storage-client",
-  "version": "0.0.2",
-  "description": "Library for faascape storage api",
-  "main": "lib/storage.js",
-  "directories": {
-    "test": "tests"
-  },
-  "scripts": {
-    "test": "mocha tests/tests.js",
-    "dbg-test":"mocha --debug-brk tests/tests.js"
-  },    
-  "author": "",
-  "license": "BSD",
-   "devDependencies": {
-       "fscp-http-client":"0.2.4",
-       "bluebird":"3.3.4"
-   }
+    "name": "fscp-node-storage-client",
+    "version": "0.0.2",
+    "description": "Library for faascape storage api",
+    "main": "lib/storage.js",
+    "directories": {
+        "test": "tests"
+    },
+    "maintainers": [
+        {
+            "name": "Xavier Milliard",
+            "email": "xm@faascape.com"
+        }
+    ],
+    "bugs": {
+        "mail": "support@faascape.com",
+        "url": "https://github.com/faascape/fscp-node-storage-client/issues"
+    },
+    "license": "BSD",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/faascape/fscp-node-storage-client.git"
+    },
+    "scripts": {
+        "test": "mocha tests/tests.js",
+        "dbg-test": "mocha --debug-brk tests/tests.js"
+    },
+    "dependencies": {
+        "fscp-http-client": "0.2.4",
+        "bluebird": "3.3.4"
+    }
 }
