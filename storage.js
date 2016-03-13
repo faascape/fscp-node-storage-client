@@ -65,6 +65,7 @@ StorageClient.prototype._get = function(path, info) {
     return new Promise(function(resolve, reject) {
         client.doGet(self.token, 
             '/storage'+path+(info ? '?info' : ''),
+            self.headers,
             function(err, res, data) {
                 if(err || res.statusCode != 200) {
                     reject({error:err, statusCode:res?res.statusCode:0});
@@ -93,7 +94,7 @@ StorageClient.prototype.get2Stream = function(path, writableStream) {
     return new Promise(function(resolve, reject) {
         client.doGet2Stream(self.token, 
             '/storage'+path,
-            null,
+            self.headers,
             writableStream,
             function(err, res, data) {
                 if(err || res.statusCode != 200) {
@@ -114,6 +115,7 @@ StorageClient.prototype.deleteContent = function(path) {
     return new Promise(function(resolve, reject) {
         client.doDelete(self.token, 
             '/storage'+path,
+            self.headers,            
             function(err, res, data) {
                 if(err || res.statusCode != 200) {
                     reject({error:err, statusCode:res?res.statusCode:0});
